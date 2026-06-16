@@ -1,0 +1,47 @@
+18:56:24 | INFO     | PIPELINE START
+18:56:24 | INFO     | TRUNCATE olist.stg_customer
+18:56:24 | INFO     | [RUN: ]stg_customers
+18:56:26 | INFO     | [OK: ]stg_customers | 99,441 rows
+18:56:26 | INFO     | TRUNCATE olist.stg_seller
+18:56:26 | INFO     | [RUN: ]stg_sellers
+18:56:26 | INFO     | [OK: ]stg_sellers | 3,095 rows
+18:56:26 | INFO     | TRUNCATE olist.stg_product
+18:56:26 | INFO     | [RUN: ]stg_products
+18:56:27 | INFO     | [OK: ]stg_products | 32,951 rows
+18:56:27 | INFO     | TRUNCATE olist.stg_geolocation
+18:56:27 | INFO     | [RUN: ]stg_geolocation
+18:56:28 | INFO     | [OK: ]stg_geolocation | 19,015 rows
+18:56:28 | INFO     | TRUNCATE olist.stg_orders
+18:56:29 | INFO     | [RUN: ]stg_orders
+18:56:31 | INFO     | [OK: ]stg_orders | 99,441 rows
+18:56:31 | INFO     | TRUNCATE olist.stg_order_items
+18:56:31 | INFO     | [RUN: ]stg_order_items
+18:56:34 | INFO     | [OK: ]stg_order_items | 112,650 rows
+18:56:34 | INFO     | TRUNCATE olist.stg_payment
+18:56:34 | INFO     | [RUN: ]stg_payment
+18:56:36 | INFO     | [OK: ]stg_payment | 103,884 rows
+18:56:36 | WARNING  | [Error: ]stg_review — file not found
+18:56:36 | INFO     | TRUNCATE olist_dwh.dim_date
+18:56:36 | INFO     | [RUN: ]dim_date
+18:56:36 | INFO     | [OK: ]dim_date | 1,096 rows
+18:56:36 | INFO     | TRUNCATE olist_dwh.dim_customer
+18:56:36 | INFO     | [RUN: ]dim_customer
+18:56:38 | INFO     | [OK: ]dim_customer | 99,441 rows
+18:56:38 | INFO     | TRUNCATE olist_dwh.dim_seller
+18:56:38 | INFO     | [RUN: ]dim_seller
+18:56:38 | INFO     | [OK: ]dim_seller | 3,095 rows
+18:56:38 | INFO     | TRUNCATE olist_dwh.dim_products
+18:56:38 | INFO     | [RUN: ]dim_products
+18:56:39 | INFO     | [OK: ]dim_products | 32,951 rows
+18:56:39 | INFO     | [RUN: ]cte_agg
+18:56:45 | INFO     | [OK: ]cte_agg | 296,241 rows
+18:56:45 | INFO     | TRUNCATE olist_dwh.fact_order_items
+18:56:45 | INFO     | TRUNCATE olist_dwh.fact_orders
+18:56:46 | INFO     | [RUN: ]fact_orders
+18:56:56 | INFO     | [OK: ]fact_orders | 99,441 rows
+18:56:56 | INFO     | TRUNCATE olist_dwh.fact_order_items
+18:56:56 | INFO     | [RUN: ]fact_order_items
+18:57:07 | INFO     | [OK: ]fact_order_items | 112,650 rows
+18:57:07 | INFO     | [RUN: ]feature_engineering
+18:57:20 | INFO     | [OK: ]feature_engineering | 101,269 rows
+18:57:20 | INFO     | PIPELINE DONE
